@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Explorer</title>
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- jQuery Mobile JS -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- ===== Page 1: Home ===== -->
+<div data-role="page" id="home">
+
+    <div data-role="header">
+        <h1>Travel Explorer 🌏</h1>
+    </div>
+
+    <div data-role="content">
+        <h2>Welcome!</h2>
+        <p>Plan your next adventure with us. Explore amazing destinations easily.</p>
+
+        <!-- Navigation buttons -->
+        <a href="#destinations" data-role="button" data-transition="slide">Destinations</a>
+        <a href="#contact" data-role="button" data-transition="slide">Contact Us</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2025 Noah</h4>
+    </div>
+
+</div>
+<!-- ===== Page 1 End ===== -->
+
+<!-- ===== Page 2: Destinations ===== -->
+<div data-role="page" id="destinations">
+
+    <div data-role="header">
+        <h1>Destinations ✈️</h1>
+    </div>
+
+    <div data-role="content">
+        <p>Check out these amazing travel spots:</p>
+
+        <!-- Collapsible set for destinations -->
+        <div data-role="collapsibleset">
+
+            <div data-role="collapsible">
+                <h3>Paris, France 🇫🇷</h3>
+                <p>The city of lights! Explore the Eiffel Tower, Louvre, and charming streets.</p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Tokyo, Japan 🇯🇵</h3>
+                <p>Experience the perfect blend of tradition and technology.</p>
+            </div>
+
+            <div data-role="collapsible">
+                <h3>Sydney, Australia 🇦🇺</h3>
+                <p>Visit the iconic Opera House and beautiful beaches.</p>
+            </div>
+
+        </div>
+
+        <!-- Back button -->
+        <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">Back to Home</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2025 Noah</h4>
+    </div>
+
+</div>
+<!-- ===== Page 2 End ===== -->
+
+<!-- ===== Page 3: Contact ===== -->
+<div data-role="page" id="contact">
+
+    <div data-role="header">
+        <h1>Contact Us 📞</h1>
+    </div>
+
+    <div data-role="content">
+        <p>We would love to hear from you!</p>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+
+            <input type="submit" value="Send" data-role="button">
+        </form>
+
+        <!-- Back button -->
+        <a href="#home" data-role="button" data-transition="slide" data-direction="reverse">Back to Home</a>
+    </div>
+
+    <div data-role="footer">
+        <h4>© 2025 Noah</h4>
+    </div>
+
+</div>
+<!-- ===== Page 3 End ===== -->
+
+</body>
+</html>

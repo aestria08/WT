@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Example</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #content {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      width: 300px;
+      display: inline-block;
+      text-align: left;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📄 AJAX Demo – Read Data from File</h2>
+  <button onclick="loadData()">Load Student Info</button>
+
+  <div id="content">Student details will appear here...</div>
+
+  <script>
+    function loadData() {
+      // Step 1: Create an XMLHttpRequest object
+      const xhr = new XMLHttpRequest();
+
+      // Step 2: Configure it (GET request to data.txt)
+      xhr.open("GET", "data.txt", true);
+
+      // Step 3: Define what happens when response arrives
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          document.getElementById("content").innerText = xhr.responseText;
+        } else {
+          document.getElementById("content").innerText = "❌ Error loading file.";
+        }
+      };
+
+      // Step 4: Send the request
+      xhr.send();
+    }
+  </script>
+
+</body>
+</html>

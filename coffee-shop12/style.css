@@ -1,0 +1,116 @@
+/* ===== Reset some default styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Body styling ===== */
+body {
+    line-height: 1.6;
+    background-color: #fdf6f0; /* light coffee color */
+    color: #333;
+    padding: 10px;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #6f4e37; /* coffee brown */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #d2691e; /* chocolate color */
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== Sections ===== */
+section {
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+section img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ===== Form ===== */
+form {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #6f4e37;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a3a2a;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #d2691e;
+    color: white;
+    margin-top: 20px;
+}
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+    
+    /* Navigation: stack links vertically on small screens */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Section images: make them smaller and centered */
+    section img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Form: full width */
+    form {
+        width: 100%;
+    }
+}
